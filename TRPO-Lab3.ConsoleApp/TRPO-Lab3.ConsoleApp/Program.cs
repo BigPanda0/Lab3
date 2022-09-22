@@ -1,13 +1,21 @@
 ﻿using System;
+using TRPO_Lab3.Lib;
 
 namespace ConsoleApp1
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            try
+            {
+                Area.PloshadShara(5, 0);
 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }
